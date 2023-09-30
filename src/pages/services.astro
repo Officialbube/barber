@@ -1,0 +1,61 @@
+---
+    import Layout from '../layouts/Layout.astro';
+    import Card from '../components/Card.astro';
+    import HeaderNav from '../components/HeaderNav.astro';
+    console.log("hello")
+---
+
+<Layout title="Barber.">
+    <header class="border  bg-black  bg-contain  relative md:px-20 overflow-hidden px-[1rem]">
+
+
+    </header>
+    <main class="overflow-x-hidden ">
+        <section class="bg-black w-full">
+            <HeaderNav/>
+        </section>
+        
+        <section >
+            <h1 class="text-center font-bold text-3xl"> Barber Services for Men and Boys of All Ages</h1>
+            <p class="text-center mt-[1.5rem] px-[2rem]">At Barbershop, we offer a wide range of barber services for men and boys of all ages.
+                Our experienced barbers are skilled in all aspects of men's hair grooming, and we use only the
+                highest quality products and tools. Whether you're looking for a classic haircut, a trendy beard trim,
+                or a full-on makeover, we can help you achieve the look you want.</p>
+            <h2 class="text-4xl font-bold text-center mt-[5rem] underline">Our Services</h2>
+            <div
+                class="grid gap-[2rem] grid-cols-1 md:grid-cols-3 place-items-center sm:grid-cols-2 w-full my-[1rem] px-[2rem]">
+                <Card title="Haircut" image="pexels-dmitry-zvolskiy-1805600.jpg"></Card>
+                <Card title="Beard Trim" image="pexels-gustavo-fring-7447145.jpg"></Card>
+                <Card title="Hair Color" image="pexels-john-diez-7389077.jpg"></Card>
+               
+            </div>
+        </section>
+        <section class="grid place-items-center w-full mt-[5rem] px-[2rem]">
+            <h2 class="font-bold text-3xl text-center w-full">Why choose Barbershop for your barbering needs?</h2>
+            <ul class="list-disc text-lg mt-[1rem]">
+            <li >We have a team of experienced and talented barbers.</li>
+            <li>We offer a wide range of barber services to meet the needs of men and boys of all ages.</li>
+            <li>We use only the highest quality products and tools.</li>
+            <li>We provide a relaxing and welcoming atmosphere.</li>
+            <li>We offer competitive pricing and flexible scheduling options.</li>
+            </ul>
+        </section>
+        <section class="px-[2rem]">
+        <h2 class="text-xl font-bold mt-[2rem]">Ready to get started?</h2>
+        <p>Book an appointment today and experience the difference that Barbershop can make.</p>
+        <div class="grid place-items-center">
+            <a href="" class="bg-black text-white text-center rounded-[5px] py-[1rem] w-[11rem] md:w-[15rem] flex justify-center block my-[1.5rem]">Book your appointment today!</a>
+        </div>
+        
+        </section>
+    </main>
+    <footer class="overflow-hidden">
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+    </footer>
+
+
+</Layout>

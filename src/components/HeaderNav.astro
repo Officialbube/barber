@@ -1,0 +1,68 @@
+---
+	
+---
+
+<nav class="flex justify-between items-center py-9 md:px-20 relative z-10">
+	<div  class="flex flex-col md:hidden relative z-50  justify-between w-8 h-5 " id="burger">
+		<span class="bg-white h-[0.1rem] w-full" id="line1"></span>
+		<span class="bg-white h-[0.1rem] w-[50%]" id="line2"></span>
+		<span class="bg-white h-[0.1rem] w-full" id="line3"></span>
+	</div>
+	<div>
+		<p class="text-white text-4xl">logo</p>
+	</div>
+	<div class="flex gap-8 text-white" >
+		<nav class="hidden md:block" id="mainNav">
+
+			<a href="/">Home</a>
+			<a href="/services">Services</a>
+			<a href="">Gallery</a>
+			<a href="">About</a>
+		</nav>
+
+		<a href="/about">contact</a>
+	</div>
+
+</nav>
+<style>
+.showNav{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	position: absolute;
+	background-color: black;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 20rem;
+	
+}
+.rotate1{
+	transform: rotate(45deg);
+}
+.hide{
+	display: none;
+}
+.rotate2{
+	
+	transform: rotate(-45deg) translate(12px, -14px);
+	
+}
+</style>
+<script>
+	const navArea = document.querySelector('#mainNav');
+	const burger = document.querySelector("#burger");
+	const line1 = document.querySelector("#line1");
+	const line2 = document.querySelector("#line2");
+	const line3 = document.querySelector("#line3");
+
+	burger.addEventListener('click',() => {
+		navArea.classList.toggle('showNav')
+		line1.classList.toggle("rotate1")
+		line2.classList.toggle("hide")
+		line3.classList.toggle("rotate2")
+	})
+
+	
+</script>
