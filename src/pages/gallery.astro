@@ -1,0 +1,47 @@
+---
+	import Layout from '../layouts/Layout.astro';
+	import GalleryCard from '../components/GalleryCard.astro';
+    import HeaderNav from '../components/HeaderNav.astro';
+	
+---
+
+<Layout title="Barber.">
+	<header class="border  bg-black  bg-contain  fixed w-full  overflow-hidden ">
+		<HeaderNav/>
+		
+	</header>
+	<main class="md:px-20 pt-[11rem]">
+    <section class="mb-[1rem]">
+    <p class="text-center text-2xl font-bold">Check out some of our most popular hairstyles!</p>
+    </section>
+    <section class="flex flex-col md:flex-row w-full flex-wrap justify-between gap-[3rem]">
+    <GalleryCard image="gal1.jpg">
+    </GalleryCard>
+    <GalleryCard image="gal2.jpg">
+    </GalleryCard>
+    <GalleryCard image="gal3.jpg">
+    </GalleryCard>
+    <GalleryCard image="gal4.jpg">
+    </GalleryCard>
+    <GalleryCard image="gal5.jpg">
+    </GalleryCard>
+    <GalleryCard image="gal6.jpg">
+    </GalleryCard>
+    <GalleryCard image="gal7.jpg">
+    </GalleryCard>
+    <GalleryCard image="gal8.jpg">
+    </GalleryCard>
+    <GalleryCard image="gal9.jpg">
+    </GalleryCard>
+    <GalleryCard image="gal10.jpg">
+    </GalleryCard>
+    <GalleryCard image="gal11.jpg">
+    </GalleryCard>
+    <GalleryCard image="gal12.jpg">
+    </GalleryCard>
+    <GalleryCard image="gal13.jpg">
+    </GalleryCard>
+    </section>
+    </main>
+
+</Layout>
