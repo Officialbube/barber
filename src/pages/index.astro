@@ -2,17 +2,20 @@
 	import Layout from '../layouts/Layout.astro';
 	import Card from '../components/Card.astro';
 	import HeaderNav from '../components/HeaderNav.astro';
-	
-	
+
+
 ---
 
 <Layout title="Barber.">
 	<header class="border h-[40rem] md:h-[50rem] bg-black  bg-contain  relative  overflow-hidden ">
-		<HeaderNav/>
-		
+		<div class="fixed top-0 left-0 z-20 w-full bg-black ">
+			<HeaderNav />
+		</div>
+
+
 		<img src="/pexels-thgusstavo-santana-1813272.jpg" alt=""
 			class="absolute top-0 brightness-[0.3] left-0 h-full w-full object-cover">
-		<div class=" relative z-10 text-white w-[90%] md:w-[50rem] mt-[7rem] md:mt-[9rem] md:px-20">
+		<div class=" relative z-10 text-white w-[90%] md:w-[50rem] mt-[15rem] md:mt-[9rem] px-[1rem] md:px-20">
 			<h1 class="text-[2rem] md:text-[4rem] flex flex-wrap font-bold">It's A Better Way To Book Your Next Haircut
 			</h1>
 			<p class="text-xs md:text-base flex flex-wrap">We offer a wide range of services, from classic haircuts to

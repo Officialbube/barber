@@ -1,15 +1,16 @@
 ---
 	import Layout from '../layouts/Layout.astro';
 	import Card from '../components/Card.astro';
-	console.log("hello")
+	import HeaderNav from '../components/HeaderNav.astro';
+	
 ---
 
 <Layout title="Barber.">
-	<header class="border  bg-black  bg-contain  relative md:px-20 overflow-hidden px-[1rem]">
-		
-		
-	</header>
-	<main class="overflow-x-hidden ">
+	<header class="fixed top-0 left-0 z-20 w-full  bg-black  overflow-hidden">
+        <HeaderNav />
+
+    </header>
+	<main class="overflow-x-hidden pt-[8rem] ">
 		<section class="h-[30rem] md:flex gap-10 mt-10 px-[1rem] md:px-20">
 			<div class=" grid place-items-center h-full w-full text-center">
 

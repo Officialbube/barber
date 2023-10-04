@@ -1,23 +1,16 @@
 ---
-	interface Props {
-		
-
-		image: string;
-
-	}
-
-	const {  image } = Astro.props;
+	
 ---
 
-<div class="link-card w-full md:w-[30%]">
+<div class="link-card w-full ">
 	<div class="image-container">
-		<img src={image}>
+		
 	</div>
 </div>
 <style>
 	.link-card {
 		
-		height: 20rem;
+		height: 40rem;
 		list-style: none;
 
 		overflow: hidden;
@@ -52,16 +45,5 @@
 		color: white;
 		background-color: #23262d;
 		opacity: 0.8;
-	}
-
-	
-
-	.link-card:is(:hover, :focus-within) {
-		background-position: 0;
-		background-image: var(--accent-gradient);
-	}
-
-	.link-card:is(:hover, :focus-within) h2 {
-		color: rgb(var(--accent-light));
 	}
 </style>
