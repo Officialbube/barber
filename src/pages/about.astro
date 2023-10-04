@@ -2,14 +2,15 @@
 	import Layout from '../layouts/Layout.astro';
 	import Card from '../components/Card.astro';
 	import HeaderNav from '../components/HeaderNav.astro';
-	
+	import Footer from '../components/Footer.astro';
+
 ---
 
 <Layout title="Barber.">
 	<header class="fixed top-0 left-0 z-20 w-full  bg-black  overflow-hidden">
-        <HeaderNav />
+		<HeaderNav />
 
-    </header>
+	</header>
 	<main class="overflow-x-hidden pt-[8rem] ">
 		<section class="h-[30rem] md:flex gap-10 mt-10 px-[1rem] md:px-20">
 			<div class=" grid place-items-center h-full w-full text-center">
@@ -28,21 +29,17 @@
 			</div>
 			<div class="flex items-center h-full w-full relative">
 				<div class=" h-1/2 w-1/2 absolute z-10">
-				<img src="/pexels-thgusstavo-santana-1804638.jpg" alt="" class="h-full w-full object-cover">
+					<img src="/pexels-thgusstavo-santana-1804638.jpg" alt="" class="h-full w-full object-cover">
 				</div>
 				<div class=" h-[70%] w-[60%] absolute right-0 ">
-				
-				<img src="/pexels-thgusstavo-santana-1813272.jpg" alt="" class="h-full w-full object-cover">
+
+					<img src="/pexels-thgusstavo-santana-1813272.jpg" alt="" class="h-full w-full object-cover">
 				</div>
 			</div>
 		</section>
 	</main>
 	<footer class="overflow-hidden">
-		<section>
-			<div></div>
-			<div></div>
-			<div></div>
-		</section>
+		<Footer />
 	</footer>
 
 

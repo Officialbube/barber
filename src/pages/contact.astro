@@ -2,24 +2,62 @@
 	import Layout from '../layouts/Layout.astro';
 	import ContactCard from '../components/ContactCard.astro';
 	import HeaderNav from '../components/HeaderNav.astro';
-	
+	import Footer from '../components/Footer.astro';
+
 ---
 
 <Layout title="Barber.">
 	<header class="fixed top-0 left-0 z-20 w-full  bg-black  overflow-hidden">
-        <HeaderNav />
+		<HeaderNav />
 
-    </header>
+	</header>
 	<main class="overflow-x-hidden pt-[8rem] ">
-	<section class="p-[5rem]">
-	<ContactCard>
-	</ContactCard>
-	</section>
-	
-		
+
+		<section class="pt-[3rem] px-[5rem]">
+			<h2 class="text-center text-4xl font-bold mb-[2rem]">Get In Touch</h2>
+
+			<form action="">
+				<div class=" flex justify-between gap-[5rem]">
+					<div class="flex flex-col gap-[1.5rem] w-full">
+						<div class="flex flex-col">
+							<label for="" class="mb-[0.75rem]">Your Name</label>
+							<input type="text" name="" placeholder="Your Name" class="border p-[1rem]" id="">
+						</div>
+						<div class="flex flex-col">
+							<label for="" class="mb-[0.75rem]">Services</label>
+							<input type="text" name="" placeholder="(eg. barbing, shaving, etc)" class="border p-[1rem]"
+								id="">
+						</div>
+
+					</div>
+					<div class="flex flex-col gap-[1.5rem] w-full">
+						<div class="flex flex-col">
+							<label for="" class="mb-[0.75rem]">Your Email</label>
+							<input type="email" name="" placeholder="Your Email" class="border p-[1rem]" id="">
+						</div>
+						<div class="flex flex-col ">
+							<label for="" class="mb-[0.75rem]">Your Phone Number</label>
+							<input type="number" name="" placeholder="Your Name" class="border p-[1rem]" id="">
+						</div>
+					</div>
+
+				</div>
+				<div class="flex flex-col mt-[1.5rem]">
+					<label for="" class="mb-[0.75rem]">Message</label>
+					<textarea name="" class="border" id="" cols="30" rows="4"></textarea>
+				</div>
+				<div class="w-full grid place-items-center">
+					<button class="bg-black text-white w-[30%] p-[1rem] mt-[1.5rem]">Submit</button>
+				</div>
+
+			</form>
+
+		</section>
+
+
 	</main>
 	<footer class="overflow-hidden">
-		
+		<Footer/>
 	</footer>
 
 

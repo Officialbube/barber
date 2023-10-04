@@ -2,13 +2,14 @@
 	import Layout from '../layouts/Layout.astro';
 	import Card from '../components/Card.astro';
 	import HeaderNav from '../components/HeaderNav.astro';
+	import Footer from '../components/Footer.astro';
 
 
 ---
 
 <Layout title="Barber.">
 	<header class="border h-[40rem] md:h-[50rem] bg-black  bg-contain  relative  overflow-hidden ">
-		<div class="fixed top-0 left-0 z-20 w-full bg-black ">
+		<div class="fixed top-0 left-0 z-20 w-full ">
 			<HeaderNav />
 		</div>
 
@@ -22,7 +23,7 @@
 				modern fades and everything
 				in between. Our experienced barbers are passionate about their craft and will help you achieve the
 				perfect look.</p>
-			<a href=""
+			<a href="/contact"
 				class="bg-white text-black py-[1rem] w-[11rem] md:w-[15rem] flex justify-center block mt-[1.5rem]">
 				Book Appointment
 			</a>
@@ -75,11 +76,7 @@
 		</section>
 	</main>
 	<footer class="overflow-hidden">
-		<section>
-			<div></div>
-			<div></div>
-			<div></div>
-		</section>
+		<Footer/>
 	</footer>
 
 
